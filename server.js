@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
@@ -11,10 +13,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Conexão com o banco
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '123456', // sua senha do MySQL
-  database: 'listadedoces'
+  host: process.env.MYSQLHOST,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDATABASE,
+  port: process.env.MYSQLPORT || 3306
 });
 
 // Verificar conexão
@@ -82,7 +85,7 @@ app.use((req, res) => {
 });
 
 // Iniciar servidor
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
 });
