@@ -7,11 +7,12 @@ const path = require('path');
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 // Servir arquivos estáticos da pasta "public"
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Conexão com o banco
+// Conexão com o banco via variáveis de ambiente
 const db = mysql.createConnection({
   host: process.env.MYSQLHOST,
   user: process.env.MYSQLUSER,
@@ -79,7 +80,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Substituir quaisquer rotas desconhecidas por 404 ou redirecionamento opcional
+// Rota para 404
 app.use((req, res) => {
   res.status(404).send('Página não encontrada');
 });
@@ -87,5 +88,5 @@ app.use((req, res) => {
 // Iniciar servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
+  console.log(`🚀 Servidor rodando na porta ${PORT}`);
 });
