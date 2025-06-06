@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/68083b232db46a190e06a5b9/1ipgcpdc7";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+  <main class="container">
+    <!-- Painel esquerdo -->
+    <section class="left-panel">
+      <header class="header">
+        <a href="../../index.html"><img src="./assets/Categorias-removebg-preview.png" alt="Logo Rohlita" class="logo"/></a>
+        <h1>Carrinho</h1>
+        <h2 id="header-items">0 Itens</h2>
+      </header>
+
+      <p class="details-label">Detalhes</p>
+
+      <ul id="item-list" class="item-list">
+        <!-- Itens são os mesmos, repetidos para exemplo -->
+        <li class="item">
+          <img src="https://placehold.co/100" alt="Doce" class="item-img" />
+          <div class="item-info">
+            <span class="item-title">Doce</span>
+            <span class="item-subtitle">1 unidade</span>
+            <button class="remove-btn" type="button">Remover</button>
+          </div>
+          <div class="qty-box">
+            <button class="qty-decrease" aria-label="Diminuir">-</button>
+            <span class="qty-value">1</span>
+            <button class="qty-increase" aria-label="Aumentar">+</button>
+          </div>
+          
+        </li>
+        <li class="item">
+            <img src="https://placehold.co/100" alt="Doce" class="item-img" />
+            <div class="item-info">
+              <span class="item-title">Doce</span>
+              <span class="item-subtitle">1 unidade</span>
+              <button class="remove-btn" type="button">Remover</button>
+            </div>
+            <div class="qty-box">
+              <button class="qty-decrease" aria-label="Diminuir">-</button>
+              <span class="qty-value">1</span>
+              <button class="qty-increase" aria-label="Aumentar">+</button>
+            </div>
+            
+          </li>
+          <li class="item">
+            <img src="https://placehold.co/100" alt="Doce" class="item-img" />
+            <div class="item-info">
+              <span class="item-title">Doce</span>
+              <span class="item-subtitle">1 unidade</span>
+              <button class="remove-btn" type="button">Remover</button>
+            </div>
+            <div class="qty-box">
+              <button class="qty-decrease" aria-label="Diminuir">-</button>
+              <span class="qty-value">1</span>
+              <button class="qty-increase" aria-label="Aumentar">+</button>
+            </div>
+            
+          </li>
+
+        <!-- Copie os itens conforme necessário -->
+      </ul>
+
+      <button class="back-btn" type="button">
+        <i class="fas fa-arrow-left"></i> Voltar
+      </button>
+    </section>
+
+    <!-- Painel direito -->
+    <section class="right-panel">
+      <h3 class="total-title">Total</h3>
+      <p id="total-items" class="total-items">0 Itens</p>
+      <ul class="total-list">
+        <li><span>Produto</span><span class="qnt-dez">1</span></li>
+        <li><span>Produto</span><span class="qnt-dez">1</span></li>
+        <li><span>Produto</span><span class="qnt-dez">1</span></li>
+      </ul>
+      
+      <button class="negotiate-btn" type="button">Negociar</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

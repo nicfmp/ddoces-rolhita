@@ -1,0 +1,85 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doces Rolhita</title>
+
+  <!-- Fontes e estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Chat Tawk.to -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/68083b232db46a190e06a5b9/1ipgcpdc7';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+
+  <body>
+
+  <header>
+  <div class="logo" aria-label="Logo Roklita">
+  <a href="../../../../index.html" rel="noopener noreferrer">
+    <img src="./assets/docesrolhita.jpg" alt="Logo Roklita red text on white background" width="80" height="80" />
+  </a>
+</div>
+
+
+  <form class="search-form" role="search" aria-label="Busca">
+    <input type="search" placeholder="O que está procurando?" aria-label="Campo de busca" />
+    <button type="submit" aria-label="Botão buscar">Buscar</button>
+  </form>
+
+  <nav class="menu" aria-label="Menu principal">
+    <a href="../../../index.html">Início</a>
+    <a href="../index.html">Produtos</a>
+    <a href="../../Contato/index.html">Contato</a>
+  </nav>
+
+  <div class="cart" role="button" tabindex="0" aria-label="Meus pedidos">
+    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+    <a href="../../Carrinho/index.html">Meus pedidos</a>
+  </div>
+</header>
+
+
+  <!-- Conteúdo principal com sidebar e conteúdo lado a lado -->
+  <div class="container1">
+    <aside class="sidebar">
+      <!-- Aqui vai o conteúdo da sidebar, como links ou menus -->
+    </aside>
+
+    <main class="content">
+      <div class="product-image">
+        <img id="produto-imagem" src="" alt="Imagem do produto" />
+      </div>
+      <div class="product-info">
+        <h1 id="produto-nome">Paçoca</h1>
+        <p class="quantidade" id="produto-embalagem">10 unidade por bandeja</p>
+        <p class="description" id="produto-descricao">
+          Paçoca em formato de rolha em bandeja com 10 unidades
+        </p>
+        <button class="cart-btn">Adicionar ao Carrinho</button>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
